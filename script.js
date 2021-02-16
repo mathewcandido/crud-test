@@ -1,3 +1,4 @@
+
 var selectedRow = null;
 
 //Função para iniciar o cadastro
@@ -82,4 +83,6 @@ function validateForm() {
         return isValid;
     }
 }
+
+
 
