@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD com JavaScript</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit();">
+                    <div>
+                        <label for="nome">Nome*</label>
+                        <label class="validation-error hide" id="validateName">Campo obrigatório.</label>
+                        <input type="text" id="nome" name="nome" />
+                    </div>
+                    <div>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" />
+                    </div>
+                    <div>
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" />
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Adicionar" />
+                    </div>
+                </form>
+            </td>
+        </tr>
+        <td>
+            <table class="list" id="pessoa">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Cidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </td>
+    </table>
+</body>
+
+</html>
